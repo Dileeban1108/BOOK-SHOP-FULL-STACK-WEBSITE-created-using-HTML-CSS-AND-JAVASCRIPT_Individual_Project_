@@ -3,7 +3,7 @@
 $serverName="localhost";
 $userName="root";
 $password="";
-$dbname="assignmrnt2";
+$dbname="php_project";
 
 $connect=mysqli_connect($serverName,$userName,$password,$dbname);
 ?>

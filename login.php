@@ -12,31 +12,12 @@ session_start();
 </head>
 <body>
     <div class="login">
+        <div class="title">Sign In</div>
         <?php
-        include 'check.php';
-        echo "";
+           include 'check.php';
+           echo $output;
         ?>
-        <?php
-        if(isset($_SESSION['new_user'])){
-        $ue=$_SESSION['new_user'];
-        $e=mysqli_query($connect,"SELECT *FROM user where email='$ue'");
-        $row=mysqli_fetch_assoc($e);
-        echo "<div class='profile'>
-            <h3>profile</h3>
-            <p>".$row['userName']."</p>
-            <p>".$row['phoneNumber']."</p>
-            <p>".$row['email']."</p>
-            <div class='con1'>
-                <a href='index.php?logout' class='logoutbtn'>logout</a>
-                <a href='index.php' class='homtbtn'>Home</a>
-            </div>
-          </div>"; 
-        }
-        else{
-            echo '
-            <div class="title">Sign In</div>'
-            .$output.
-        '<form action="login.php" method="POST">
+        <form action="login.php" method="POST">
             <div class="input-boxL">
                 <input type="email" placeholder="Email" name="email">
             </div> 
@@ -52,12 +33,13 @@ session_start();
             <div class="button">
                 <a href="signup.php">sign up</a>
             </div>
-        </div>';
-        }
-        
-        ?>
-      
-
+        </div>
+        <div class="homebtn">
+                <a href="index.php">Home</a>
+        </div>
+        <div>
+            
+        </div>
     </div>
 </body>
 </html>

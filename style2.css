@@ -1,0 +1,341 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:  border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background:#fff;
+    flex-wrap: wrap;
+}
+.product_section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin: 1rem;
+    width: 100%;
+}
+.products{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(218, 218, 216);
+    padding: .5rem 2rem;
+    border-radius: 1.5rem;
+    margin: 1rem 3rem;
+}
+.products .image img{
+    width: 15rem;
+    padding-top: .5rem;
+    border-radius: 10px;
+}
+ .update_form{
+    background: #eee;
+    margin-top: 3rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1.5rem;
+    width: 70%;
+}
+ .update_form h3{
+    text-align: center;
+    margin-top: 1rem;
+}
+ .update_form .home{
+    margin-bottom: 1rem ;
+}
+.product_section .update_form .home a{
+    color: red;
+    background-color:  #585757;
+    padding: .5rem 2rem;
+    border-radius: 2.5rem;
+    text-decoration: none;
+    color: #121212;
+    font-size: small;
+    font-weight: 800;
+}
+.update_form form{
+    padding: 1rem;
+    text-align: center;
+    width: 95%;
+}
+.update_form form input{
+    width: 70%;
+    height: 2rem;
+    margin-bottom: .2rem;
+    border-radius: .5rem;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: .9rem;
+    font-weight: 540;
+}
+.update_form form .submit {
+    padding-top: 1rem;
+}
+ .update_form form .submit input{
+    justify-content: center;
+    border-radius: 2.5rem;
+    background: #585757;
+    color: black;
+    font-size: large;
+    font-weight: 900;
+}
+ .update_form form .submit input:hover{
+    background: #fffcfc;
+}
+.update_form .home a:hover{
+    background: #fffcfc;
+    border: solid;
+}
+.back{
+    background-color: #fffcfc;
+    border: solid;
+    width: 100%;
+    height: 5rem;
+    position: absolute;
+}
+table tbody tr td img{
+    height:5rem;
+}
+td{
+    width: 4rem;
+    border: 1px black solid;
+}
+td form input{
+    width: 3rem;
+    text-align: center;
+}
+
+td form button{
+    background: #0d910f;
+    border: none;
+    padding: .5rem 1rem;
+    border-radius: 10px;
+    font-weight: 800;
+}
+table{
+    position: absolute;
+    width: 100%;
+    top: 0%;
+    text-align: center;
+}
+table h1{
+    font-size: .9rem;
+    font-weight: 700;
+}
+table .buttons{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 1.5rem 0  1.5rem 0;
+}
+table .buttons  a{
+    background: #0a720c;
+    border: solid;
+    padding: .5rem 0 .5rem 0;
+    margin: .1rem 0 .1rem 0;
+    color: white;
+    font-weight: 700;
+    border-radius: 10px;
+  }
+.cprice{
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    bottom: 2%;
+    width: 80%;
+    text-align: center;
+    background-color: #e7e1e1;
+    padding: 1rem 0rem 1rem 0rem;
+}
+.cprice div{
+    width: 30%;
+}
+.cprice div h1{
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+.btns{
+    display: flex;
+    flex-wrap:wrap ;
+    text-align: center;
+    width: 35%;
+    border-radius: 10px;
+}
+.btns a{
+    width:50%;
+    background: #11b114;
+    padding-top: .2rem;
+    font-size: .9rem;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 10px;
+
+}
+thead tr td{
+    background: #858282;
+    font-weight: 700;
+    color: #fff;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -16px;
+    padding: 1rem;
+  }
+  
+  .col-25 {
+    flex: 25%;
+  }
+  .col-25 .cart{
+    background: #bdbaba;
+    border-radius: 5px;
+    width: 100%;
+  display: flex;
+  border: 1px solid black;
+  justify-content: space-between;
+  padding: .3rem 1rem;
+  }
+  .col-25 .cart h3{
+    color: #121212;
+    font-size: 1rem;
+  }
+  .col-25 .cart h6{
+    color: #ec0808;
+    font-size: 1rem;
+  }
+  
+  
+  .col-50 {
+    flex: 50%;
+  }
+  
+  .col-75 {
+    flex: 75%;
+  }
+  
+  .col-25,
+  .col-50,
+  .col-75 {
+    padding: 0 16px;
+  }
+  
+  .container {
+    background-color: #f2f2f2;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+  }
+  
+  input[type=text] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  label {
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+  }
+  
+  .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+  }
+  
+  .btn:hover {
+    background-color: #45a049;
+  }
+  
+  span.price {
+    float: right;
+    color: grey;
+  }
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
+  @media (max-width: 800px) {
+    .row {
+      flex-direction: column-reverse;
+    }
+    .col-25 {
+      margin-bottom: 20px;
+    }
+  }
+  .total{
+    background: #858282;
+    padding: .5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    font-weight: 700;
+  }
+  hr{
+    margin: .5rem 0 .5rem 0;
+    height: .3rem;
+   background: rgb(66, 65, 65);
+  }
+  .backcart{
+    margin-top:.3rem ;
+    background: #585757;
+    border-radius: 5px;
+    text-align: center;
+    padding: .2rem .5rem;
+  }
+  .backcart a{
+    color: #ccc;
+    font-weight: 700;
+  }
+  .alert {
+    padding: .4rem;
+    margin-bottom: 10px;
+    border: 1px solid #ff0000;
+    color: #ff0000;
+    background-color: #ffcccc;
+    border-radius: 5px;
+    position: relative;
+    top: 8px;
+    text-align: center;
+}
+.success {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #008000;
+  color: #008000;
+  background-color: #ccffcc;
+  border-radius: 5px;
+  position: relative;
+  top: 8px;
+  text-align: center;
+}
+.obuttons{
+  gap: 1rem;
+}
+.obuttons a{
+  background: #585757;
+  border-radius: 10px;
+  margin: 0 .5rem;
+}

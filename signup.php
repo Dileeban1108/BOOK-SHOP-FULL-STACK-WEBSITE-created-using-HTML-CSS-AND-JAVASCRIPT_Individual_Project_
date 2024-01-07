@@ -22,7 +22,7 @@
             <div class="input-box">
                 <input type="tel" id="phone" min="0" max="10" placeholder="phone number" name="number">
             </div>
-            <div class="input-box" style="width:100%">
+            <div class="input-box">
                 <input type="email" placeholder="Email" name="el">
             </div>
             <div class="input-box">
@@ -31,7 +31,6 @@
             <div class="input-box">
                 <input type="password" placeholder="Confirm password" name="cpwd">
             </div>
-
             <div class="button">
                 <input type="submit" value="register" name="submit">
             </div>
@@ -41,6 +40,9 @@
                 <div class="button">
                     <a href="login.php">Login</a>
                 </div>
+        </div>
+        <div class="homebtn">
+            <a href="index.php">Home</a>
         </div>
     </div>
     <script src="phone-number-validation\build\js\intlTelInput.js"></script>

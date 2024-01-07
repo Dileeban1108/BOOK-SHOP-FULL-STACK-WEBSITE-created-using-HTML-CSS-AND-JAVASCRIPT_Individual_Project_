@@ -18,11 +18,10 @@ $output="";
        $quantity=$_POST['qty'];
        $price=$_POST['pc'];
        $des=$_POST['des'];
-        
        $p_image= $_FILES['p_image']['name'];
        $p_image_tmp_name = $_FILES['p_image']['tmp_name'];
+       $p_image_folder_arrivals ='arrivals/'.$p_image;
        
-       $p_image_folder_arrivals = 'arrivals/'.$p_image;
        $check=mysqli_query($connect,"SELECT *FROM product WHERE prod_name='$name'");
        $error=array();
        if(empty($name)){
@@ -65,7 +64,6 @@ $output="";
                     move_uploaded_file($p_image_tmp_name,$p_image_folder_arrivals);
                     $output.="<p class='success'>product add succesfully into folder_arrivals</p>";  
                     header("Location:index.php");
-
             }
             else{
                 $output.="<p class='success'>Failed to add product into folder_arrivals</p>";

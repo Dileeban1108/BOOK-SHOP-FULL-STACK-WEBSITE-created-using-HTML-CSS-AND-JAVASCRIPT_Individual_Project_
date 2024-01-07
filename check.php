@@ -80,9 +80,9 @@ if (isset($_POST['submit'])) {
         } else {
             $output .= "<p class='alert'>No user found with the provided email</p>";
         }
-    } //else {
-    //    $output .= "<p class='alert'>Error in the SQL query: " . mysqli_error($connect) . "</p>";
-    // }
+    } else {
+       $output .= "<p class='alert'>Error in the SQL query: " . mysqli_error($connect) . "</p>";
+    }
 }
 ?>
 

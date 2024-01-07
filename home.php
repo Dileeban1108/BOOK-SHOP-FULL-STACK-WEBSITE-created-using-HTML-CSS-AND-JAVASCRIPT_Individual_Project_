@@ -1,3 +1,7 @@
+<?php
+require 'dbc.php';
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,14 +27,16 @@
 </head>
 <body>
     <header>
-        <div class="logo" style=" font-size:x-large; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; border: solid;">ABC</div>
+            <div class="logo" style=" font-size:x-large; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; border: solid;">
+                ABC
+            </div>
             <div id="menu-bar" class="fas fa-bars"></div>
             <nav class="navbar">
                 <a href="#home" class="active">home</a>
                 <a href="#reveiw">customer reviews</a>
             </nav>
-            <div class="signuplogo">
-                 <a href="login.php"><i>Log In</i></a>                
+            <div class="logintext">
+                 <a href="login.php">Log In</a>                
             </div>
     </header>
     <section class="home" style="padding-top: 8rem;" id="home">
@@ -58,59 +64,34 @@
                </h3>
             </div>
         </div>
-    </section>
+    </section> 
     <section class="reveiw" id="reveiw">
         <h1 class="heading"> CUSTOMER<span> REVIEWS</span></h1>
         <div class="box-container">
-            <div class="box">
-                <img src="images\customers.png" alt="">
-                <h3>Ashen rashmika</h3>
-                <div class="stars">
+        <?php
+    $select_products = mysqli_query($connect, "SELECT * FROM review ORDER BY rId desc");
+    if(mysqli_num_rows($select_products) > 0){
+        while($row = mysqli_fetch_assoc($select_products)){
+    ?>
+    <div class="box">
+        <img src="images\customers.png" alt="">
+        <h3><?php echo $row['reviewerName']; ?></h3>
+        <div class="stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="far fa-star"></i>
-                </div>
-                <p>this is the best app I have ever used.because all book are herehighly recomended</p>
-            </div>
-            <div class="box">
-                <img src="images\customers.png" alt="">
-                <h3>shashinda</h3>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
-                </div>
-                <p>good job.one of best app collection.love it</p>
-            </div>
-            <div class="box">
-                <img src="images\customers.png" alt="">
-                <h3>sadeep fernando</h3>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
-                </div>
-                <p>very fast app.i can easyly handle it.recomended</p>
-            </div>
-            
-            <div class="box">
-                <img src="images\customers.png" alt="">
-                <h3>peheliya dhanuka</h3>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
-                </div>
-                <p>nice.good job,highly recomended</p>
-            </div>
+        </div>
+        <div class="content">
+            <p><?php echo $row['review']; ?></p>
+        </div>
+    </div>
+    <?php
+        };    
+    };
+    ?>
+</div>
         </div>
       </section>
   </body>  

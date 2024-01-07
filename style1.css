@@ -3,202 +3,256 @@
     padding: 0;
     box-sizing:  border-box;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
 }
 body{
     display: flex;
     height: 100vh;
     justify-content: center;
     align-items: center;
-    background:linear-gradient(120deg, #7ce86f ,#cbcb8b);
+    flex-wrap: wrap;
+    background: #fff;
 }
 .registration{
-    max-width: 600px;
-    width: 100%;
-    background:#fff;
-    padding: 25px 30px;
+    background:#e3dfdf;
+    padding:1rem;
     border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
+    box-shadow:0 .1rem .5rem rgb(117, 114, 114);
+
 }
 .registration .title{
     font-size:25px;
     font-weight: 700;
-    /* position: relative;
-    left: 28%; */
     text-align: center;
 }
-.registration form {
+.registration  form {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin:2px 0 12px 0 ;
+    flex-direction: column;
+    justify-content: center;
 }
 form .input-box{
-    width: calc(100% / 2 - 20px);
-    margin: 20px 0 12px 0;
+    width: 90%;
+    margin: .5rem 0 0 1rem;
 }
 form .input-box input{
     height: 42px;
     width: 100%;
-    outline: none;
-    border-radius: 5px;
-    border: .1px solid #340b0b;
     font-size: 16px;
-    background: #eee;
+    background: #e1dede;
     padding-left: 15px;
-    border-bottom-width: 3px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
+    border-radius: 20px;
+    box-shadow:0 .1rem .5rem rgb(117, 114, 114);
+    border: none;
 }
 form .button{
-    height: 45px;
-    width: 100%;
-    margin: 45px 0;
-
+    width: 40%;
+    height: 40px;
+    border: none;
+    margin-top: .9rem;
+    margin-left: 5.5rem;
 }
 form .button input{
     cursor: pointer;
     height: 100%;
     width: 100%;
-    outline: none;
-    border-radius: 5px;
-    border: .1px solid #340b0b;
+    border-radius: 30px;
+    border:none;
     font-size: 16px;
-    background: #eee;
-    border-bottom-width: 3px;
+    background: rgb(72, 70, 70);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
+    box-shadow:0 .1rem .5rem rgb(117, 114, 114);
+    color: white;
 }
 .login{
-    max-width: 500px;
-    width: 100%;
-    background:#ffffff;
-    padding: 25px 30px ;
+    background:#e3dfdf;
+    padding:1rem;
     border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
+    box-shadow:0 .1rem .5rem rgb(117, 114, 114);
 }
 .login .title{
     font-size:25px;
     font-weight: 700;
-    /* position: relative;
-    left: 32%; */
     text-align: center;
 }
 .login form {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    margin:2px 0 12px 0 ;
+    justify-content: center;
 }
 form .input-boxL{
-    width: 100%;
-    margin: 20px 0 12px 0;
+    width: 90%;
+    margin: .5rem 0 0 1rem;
 }
 form .input-boxL input{
     height: 42px;
     width: 100%;
-    outline: none;
-    border-radius: 5px;
-    border: .1px solid #340b0b;
     font-size: 16px;
-    background: #eee;
+    background: #e1dede;
     padding-left: 15px;
-    border-bottom-width: 3px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
+    border-radius: 20px;
+    box-shadow:0 .1rem .5rem rgb(117, 114, 114);
+    border: none;
 }
 .directToLogin{
     display: flex;
     justify-content: space-around;
+    margin-top: 1rem;
 }
+
 .directToLogin .button a{
-    text-decoration: none;
-    padding: 10px 50px;
-    outline: none;
-    border-radius: 5px;
-    border: .1px solid #340b0b;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    border:none;
     font-size: 16px;
-    background: #eee;
-    border-bottom-width: 3px;
+    background: rgb(87, 86, 85);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
+    box-shadow:0 .1rem .5rem rgb(117, 114, 114);
+    padding: .6rem 1rem;
+    color: white;
 }
-@media(max-width:768px){
-    form .input-box{
-        width: 100%;
-    }
+.homebtn{
+    border: none;
+    margin-top: 1.5rem;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+}
+.homebtn a{
+    border-radius: 30px;
+    font-size: 16px;
+    background: rgb(72, 70, 70);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow:0 .1rem .5rem rgb(117, 114, 114);
+    color: white;
+    padding: .3rem 8rem;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(200, 182, 94);
+    padding: .5rem 2rem;
+    border-radius: 1.5rem;
+    margin: 0 3rem;
+}
+.viewAdmin .container h1{
+    font-size: 1.5rem;
+}
+.viewAdmin .container h2{
+    font-size: 1rem;
+}
+.viewAdmin .container h3{
+    font-size: 1rem;
+}
+.viewAdmin .container .image img{
+    width: 5rem;
 }
 .profile{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    background: #eee;
-    padding: 20px;
-    /* margin: 5px; */
-  border: .1px solid black;
-    border-bottom-width: 3px;  
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: 800;
-}
-.profile1{
-     display: flex;
     justify-content: center;
-    padding: 20px;
-    border-bottom-width: 3px;  
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: 800;
+    align-items: center;
+    padding: .5rem 2rem;
+    border-radius: 1.5rem;
+    margin: 0 3rem;
+    background: #ccc;
 }
-.profile1 a{
-    background:#fff;
-    border: .1px solid black;
-    border-bottom-width: 3px;
-    padding: 10px 4rem;
-    position: relative;
-    text-decoration: none;
-    text-align: center;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
+.profile h1{
+    font-size: 1.5rem;
+}
+.profile h2{
+    font-size: 1rem;
 }
 .profile h3{
-    color:#191818;
-    background-color:rgb(255, 153, 0);
-    padding: 5px 45%;
+    font-size: 1rem;
 }
-.profile a{
-    background:#fff;
-    border: .1px solid black;
-    border-bottom-width: 3px;
-    padding: 1.2% 10%;
-    position: relative;
-    text-decoration: none;
-    text-align: center;
+.profile .image img{
+    width: 5rem;
 }
-.profile .con1{
+.profile_section{
     display: flex;
-    /* margin: 20px; */
-    /* padding: 20px; */
-    justify-content: space-evenly;
- margin-top: 10px;
- /* border: solid; */
- width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin: 1rem;
+    width: 100%;
+}
+.viewAdmin{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin: 1rem;
+    width: 100%;
+}
+.profile_section .update_form{
+    background: #eee;
+    margin-top: 3rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    border-radius: 1.5rem;
+}
+.profile_section .update_form h3{
+    text-align: center;
+    margin-top: 1rem;
+}
+.profile_section .update_form .home{
+    margin-bottom: 1rem ;
+}
+.profile_section .update_form .home a{
+    color: red;
+    background-color:  #585757;
+    padding: .5rem 2rem;
+    border-radius: 2.5rem;
+    text-decoration: none;
+    color: #121212;
+    font-size: small;
+    font-weight: 800;
+}
+.profile_section .update_form form{
+    padding: 1rem;
+    text-align: center;
+    width: 95%;
+}
+.profile_section .update_form form input{
+    width: 70%;
+    height: 2rem;
+    margin-bottom: .2rem;
+    border-radius: .5rem;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: .9rem;
+    font-weight: 540;
+}
+.profile_section .update_form form .submit {
+    padding-top: 1rem;
+}
+.profile_section .update_form form .submit input{
+    justify-content: center;
+    border-radius: 2.5rem;
+    background: #585757;
+    color: black;
+    font-size: large;
+    font-weight: 900;
+}
+.profile_section .update_form form .submit input:hover{
+    background: #fffcfc;
+}
+.profile_section .update_form .home a:hover{
+    background: #fffcfc;
+    border: solid;
+}
+@media(max-width:600px){
+    .update_form h3{
+        font-size: .1rem;
+    }
 }
 .admin-adder{
     max-width: 600px;
@@ -214,8 +268,6 @@ form .input-boxL input{
 .admin-adder .title{
     font-size:25px;
     font-weight: 700;
-    /* position: relative;
-    left: 28%; */
     text-align: center;
 }
 .admin-adder form {
@@ -225,7 +277,7 @@ form .input-boxL input{
     margin:2px 0 12px 0 ;
 }
 .alert {
-    padding: 10px;
+    padding: .4rem;
     margin-bottom: 10px;
     border: 1px solid #ff0000;
     color: #ff0000;
@@ -233,8 +285,8 @@ form .input-boxL input{
     border-radius: 5px;
     position: relative;
     top: 8px;
+    text-align: center;
 }
-
 .success {
     padding: 10px;
     margin-bottom: 10px;
@@ -244,7 +296,119 @@ form .input-boxL input{
     border-radius: 5px;
     position: relative;
     top: 8px;
+    text-align: center;
 }
-.con2{
+.viewAdmin .buttons {
+    display: flex;
+    width: 100%;
+    height: 2rem;
+    gap: .5rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+.viewAdmin .buttons .view-btn{
+    background-color: #848984;
+    width: 50%;
+    border-radius: 20px;
+    padding: .2rem .3rem .3rem .3rem;
+}
+.viewAdmin .buttons .view-btn:hover{
+    background-color: #dce2dc;
+}
+.viewAdmin .buttons .view-btn a{
+    color: #0c0c0c;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.viewAdmin .buttons .delete-btn{
+    background-color: #fd0202;
+    width: 50%;
+    border-radius: 20px;
+    padding: .2rem .3rem .3rem .3rem;
+}
+.viewAdmin .buttons .delete-btn:hover{
+    background-color: #e0dbdb;
+}
+.viewAdmin .buttons .delete-btn a{
+    color: #014001;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.allAdmins{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin: 1rem;
+}
+.allAdmins .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(200, 182, 94);
+    margin: 1rem;
+    padding: 1rem;
+}
+.allAdmins .container .image img{
+    width: 2rem;
+}
+.allAdmins .container h1{
+    font-size: 1rem;
+}
+.allAdmins .container h2{
+    font-size: .5rem;
+}
+.allAdmins .container h3{
+    font-size: .5rem;
+}
+.allAdmins .buttons {
+    display: flex;
+    width: 100%;
+    height: 1.5rem;
+    gap: .5rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+.allAdmins .buttons .view-btn{
+    background-color: #848984;
+    width: 50%;
+    border-radius: 20px;
+    padding: 0 1rem;
+}
+.allAdmins .buttons .view-btn:hover{
+    background-color: #dce2dc;
+}
+.allAdmins .buttons .view-btn a{
+    color: #0c0c0c;
+    font-size: .8rem;
+    font-weight: 600;
+}
+.allAdmins .buttons .delete-btn{
+    background-color: #fd0202;
+    width: 50%;
+    border-radius: 20px;
+    padding: 0 1rem;
 
+}
+.allAdmins .buttons .delete-btn:hover{
+    background-color: #e0dbdb;
+}
+.allAdmins .buttons .delete-btn a{
+    color: #014001;
+    font-size: .8rem;
+    font-weight: 600;
+}
+.sub-topic{
+    padding: 1rem 3rem;
+}
+hr{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    width: 90%;
+    height: .8rem;
+    background: #848984;
+    border-radius: 20px;
 }
