@@ -36,6 +36,7 @@ body{
     width: 15rem;
     padding-top: .5rem;
     border-radius: 10px;
+    border: none;
 }
  .update_form{
     background: #eee;
@@ -44,7 +45,7 @@ body{
     display: flex;
     flex-direction: column;
     border-radius: 1.5rem;
-    width: 70%;
+    width: 50%;
 }
  .update_form h3{
     text-align: center;
@@ -53,13 +54,22 @@ body{
  .update_form .home{
     margin-bottom: 1rem ;
 }
+.product_section{
+  background: url("./images/back.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 1rem;
+  height: 100%;
+}
 .product_section .update_form .home a{
     color: red;
     background-color:  #585757;
     padding: .5rem 2rem;
     border-radius: 2.5rem;
     text-decoration: none;
-    color: #121212;
+    color: #ffffff;
     font-size: small;
     font-weight: 800;
 }
@@ -77,6 +87,7 @@ body{
     color: rgb(0, 0, 0);
     font-size: .9rem;
     font-weight: 540;
+    border: none;
 }
 .update_form form .submit {
     padding-top: 1rem;
@@ -85,20 +96,14 @@ body{
     justify-content: center;
     border-radius: 2.5rem;
     background: #585757;
-    color: black;
     font-size: large;
     font-weight: 900;
+    color: white;
+    cursor: pointer;
 }
- .update_form form .submit input:hover{
-    background: #fffcfc;
-}
-.update_form .home a:hover{
-    background: #fffcfc;
-    border: solid;
-}
+
 .back{
     background-color: #fffcfc;
-    border: solid;
     width: 100%;
     height: 5rem;
     position: absolute;
@@ -333,9 +338,14 @@ thead tr td{
 }
 .obuttons{
   gap: 1rem;
+  width: 100px;
+
 }
 .obuttons a{
-  background: #585757;
-  border-radius: 10px;
+  background: #008cff;
+  border-radius: 5px;
   margin: 0 .5rem;
+  width: 100px;
+  padding: 5px;
+  color: white;
 }

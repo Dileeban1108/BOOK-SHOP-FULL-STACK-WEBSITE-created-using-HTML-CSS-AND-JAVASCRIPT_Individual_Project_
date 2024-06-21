@@ -21,7 +21,7 @@ if(isset($_SESSION['new_user'])){
     <link rel="stylesheet" href="style1.css">
     <title>Document</title>
 </head>
-<body>
+<body class="useradmins" >
 <?php 
 if (isset($_GET['aId'])) {
     $aId = $_GET['aId'];
@@ -53,8 +53,6 @@ if (isset($_GET['aId'])) {
             </div>
         </div>
     </section>
-
-    <hr>
     <div class="sub-topic">
         <h1>All Admins</h1>
     </div>
