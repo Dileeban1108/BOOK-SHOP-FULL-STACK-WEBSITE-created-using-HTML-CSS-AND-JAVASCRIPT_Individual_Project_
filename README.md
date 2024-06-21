@@ -3,6 +3,10 @@ Creating a "Read Me" file (often named README.md) for your PHP e-commerce applic
 ---
 
 # Simple PHP E-Commerce Application
+#superadmins
+username:naveen
+email:dileebandileeban2001@gmail.com
+password:1234
 
 ## Introduction
 

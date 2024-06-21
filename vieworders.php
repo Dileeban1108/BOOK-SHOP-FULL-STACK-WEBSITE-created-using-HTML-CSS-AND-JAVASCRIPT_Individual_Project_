@@ -66,8 +66,7 @@ if(isset($_SESSION['new_user'])){
                     <h1><?php echo "$ ". $row2['price']; ?></h1><br>
                 </td>
                 <td class="obuttons">
-                    <a href="">confirm</a>
-                    <a href="">delete</a>
+                <a href="#" onclick="alert('Message sent to the user')">Confirm</a>
                 </td>
             <?php
                 }
