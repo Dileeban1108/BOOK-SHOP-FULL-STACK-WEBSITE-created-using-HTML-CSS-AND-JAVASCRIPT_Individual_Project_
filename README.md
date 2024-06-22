@@ -25,13 +25,9 @@ To set up this application on your local machine, follow these steps:
    git clone  https://github.com/Dileeban1108/BOOK-SHOP-FULL-STACK-WEBSITE-created-using-HTML-CSS-AND-JAVASCRIPT_Individual_Project_.git
    ```
 
-2. Navigate to the project directory:
-   ```bash
-   cd simple-php-ecommerce
-   ```
 
 3. Set up the database:
-   - Create a new MySQL database and import the `database.sql` file to set up the required tables.
+   - Create a new MySQL database and import the `data.sql` file to set up the required tables.
 
 4. Configure the application:
    - Rename `config.example.php` to `config.php`.
