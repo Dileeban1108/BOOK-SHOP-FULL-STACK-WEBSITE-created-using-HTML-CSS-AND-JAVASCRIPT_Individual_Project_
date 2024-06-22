@@ -2,19 +2,13 @@ Creating a "Read Me" file (often named README.md) for your PHP e-commerce applic
 
 ---
 
-# Simple PHP E-Commerce Application
+# Simple PHP E-Commerce Application(Book Shop)
 
 ## Introduction
 
 This repository contains a simple PHP e-commerce application. The application allows users to browse products, add them to the cart, and complete the checkout process.
 (Final sourcecodes are in the branch_1 branch)
-## Table of Contents
 
-1. [Features](#features)
-2. [Installation](#installation)
-3. [Usage](#usage)
-4. [Contributing](#contributing)
-5. [License](#license)
 
 ## Features
 
@@ -28,7 +22,7 @@ To set up this application on your local machine, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/simple-php-ecommerce.git
+   git clone  https://github.com/Dileeban1108/BOOK-SHOP-FULL-STACK-WEBSITE-created-using-HTML-CSS-AND-JAVASCRIPT_Individual_Project_.git
    ```
 
 2. Navigate to the project directory:
